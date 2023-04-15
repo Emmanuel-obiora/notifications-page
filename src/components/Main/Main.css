@@ -1,0 +1,147 @@
+.main-container{
+    background: var(--White);
+    border-radius: 10px;
+    width: 650px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.main-container > section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.left-header > span{
+    background: var(--Blue);
+    color: var(--Very-light-grayish-blue);
+    width: 1.4rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.mark-read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--Grayish-blue);
+    font-weight: 500;
+    cursor: pointer;
+    padding: .2rem;
+    border-radius: 5px;
+}
+
+.mark-read:hover{
+    background: var(--Blue);
+    color: var(--White);
+}
+
+/* =======styling the message container and its content */
+
+.messages{
+    margin-top: .5rem;
+    display: grid;
+    row-gap: .3rem;
+    background: transparent;
+}
+
+.messages-art{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.messages-cont{
+    display: flex;
+    padding: .5rem;
+    gap: .5rem;
+    background: var(--Very-light-grayish-blue);
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.messages-cont:hover{
+    background: var(--Blue-varient);
+}
+
+.messages-cont .user-icon{
+    max-width: 8%;
+    border-radius: 50%;
+}
+
+.messages-cont_info{
+    display: grid;
+    row-gap: .2rem;
+}
+
+.messages-cont_info > span{
+    color: var(--Grayish-blue);
+}
+
+.msg{
+    display: flexbox;
+    gap: 5px;
+    align-items: center;
+    font-size: 16px;
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+}
+
+.paragraph{
+    color: var(--Grayish-blue);
+    margin: 0 5px;
+}
+
+.notice{
+    color: var(--Dark-grayish-blue);
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+#dynamic-class{
+    color: var(--Blue);
+}
+
+.red-notice{
+    color: var(--Red);
+    width: 8px;
+    height: 8px;
+}
+
+.trf-image{
+    max-width: 8%;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+
+/* =========drop down message=========== */
+.msg-main{
+    display: none;
+    border: 1px solid var(--Grayish-blue);
+    padding: .8rem;
+    margin-left: 4.1rem;
+    border-radius: 5px;
+}
+
+.msg-main > p{
+    color: var(--Grayish-blue);
+    font-size: 14px;
+}

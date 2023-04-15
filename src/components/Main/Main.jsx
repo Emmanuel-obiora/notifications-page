@@ -1,34 +1,47 @@
 import React from 'react'
 import './Main.css'
+import Data from './data.json'
+import {BsFillCircleFill} from 'react-icons/bs'
 
 const Main = () => {
+
   return (
-    <div>
+    <main className='main-container'>
+      <section>
+        <div className="left-header">
+          <h1>Notifications</h1>
+          <span>3</span>
+        </div>
+        <button type='button' className='mark-read'>Mark all as read</button>
+      </section>
+
+      <div className="messages">
+        {
+          Data.map((info, i) => {
+            return(
+              <article className='messages-art'>
+                <div className='messages-cont'>
+                  <img src={info.icon} className="user-icon" alt="" />
+                  <div className="messages-cont_info">
+                    <h2 className="msg">{info.messenger} 
+                      <span className="paragraph">{info.highlight}</span>
+                      <span className='notice' id={info.classD}>{info.update}</span>
+                      <BsFillCircleFill className='red-notice'/>
+                    </h2>
+                    <span>{info.time}</span>
+                  </div>
+                  <img src={info.trfImage} className='trf-image' alt="" />
+                </div>
+                <div className='msg-main'>
+                    <p>{info.Msg}</p>
+                  </div>
+              </article>
+            )
+          })
+        }
         
-
-Mark Webber reacted to your recent post My first tournament today!
-1m ago
-
-Angela Gray followed you
-5m ago
-
-Jacob Thompson has joined your group Chess Club
-1 day ago
-
-Rizky Hasanuddin sent you a private message
-5 days ago
-Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-I'm already having lots of fun and improving my game.
-
-Kimberly Smith commented on your picture
-1 week ago
-
-Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-2 weeks ago
-
-Anna Kim left the group Chess Club
-2 weeks ago
-    </div>
+      </div>
+    </main>
   )
 }
 
