@@ -1,62 +1,83 @@
-
-[
+{
+  "notify":[
     {
+      "id": 1,
       "icon": "images/avatar-mark-webber.webp",
       "messenger": "Mark Webber",
       "highlight": "reacted to your recent post",
       "update": "My first tournament today!",
       "time": "1m ago",
-      "Msg": ""
+      "Msg": "",
+      "msgUnread": false,
+      "isUnread": true
     },
     {
+      "id": 2,
       "icon": "images/avatar-angela-gray.webp",
       "messenger": "Angela Gray",
       "highlight": "followed you",
       "update": "",
       "time": "5m ago",
-      "Msg": ""
+      "Msg": "",
+      "msgUnread": false,
+      "isUnread": true
     },
     {
+      "id": 3,
       "icon": "images/avatar-jacob-thompson.webp",
       "messenger": "Jacob Thompson",
       "highlight": "has joined your group",
       "update": "Chess Club",
       "time": "1 day ago",
       "Msg": "",
-      "classD": "dynamic-class"
+      "msgUnread": false,
+      "classD": "dynamic-class",
+      "isUnread": true
     },
     {
+      "id": 4,
       "icon": "images/avatar-rizky-hasanuddin.webp",
       "messenger": "Rizky Hasanuddin",
       "highlight": "sent you a private message",
       "update": "",
       "time": "5 days ago",
-      "Msg": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+      "Msg": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+      "msgUnread": true,
+      "isUnread": false
     },
     {
+      "id": 5,
       "icon": "images/avatar-kimberly-smith.webp",
       "messenger": "Kimberly Smith",
       "highlight": "commented on your picture",
       "update": "",
       "time": "1 week ago",
       "Msg": "",
-      "trfImage": "images/image-chess.webp"
+      "msgUnread": false,
+      "trfImage": "images/image-chess.webp",
+      "isUnread": false
     },
     {
+      "id": 6,
       "icon": "images/avatar-nathan-peterson.webp",
       "messenger": "Nathan Peterson",
       "highlight": "reacted to your recent post",
       "update": "5 end-game strategies to increase your win rate",
       "time": "2 weeks ago",
-      "Msg": ""
+      "Msg": "",
+      "msgUnread": false,
+      "isUnread": false
     },
     {
+      "id": 7,
       "icon": "images/avatar-anna-kim.webp",
       "messenger": "Anna Kim",
       "highlight": "left the group",
       "update": "Chess Club",
       "time": "2 weeks ago",
       "Msg": "",
-      "classD": "dynamic-class"
+      "msgUnread": false,
+      "classD": "dynamic-class",
+      "isUnread": false
     }
-  ]
+  ]}

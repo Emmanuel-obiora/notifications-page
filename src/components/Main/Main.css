@@ -63,14 +63,17 @@
 .messages-art{
     display: flex;
     flex-direction: column;
-    gap: .6rem;
+    gap: .6rem;   
+}
+
+[data-unread='true']{
+    background: var(--Very-light-grayish-blue);
 }
 
 .messages-cont{
     display: flex;
     padding: .5rem;
     gap: .5rem;
-    background: var(--Very-light-grayish-blue);
     border-radius: 8px;
     align-items: center;
     cursor: pointer;
@@ -134,14 +137,20 @@
 
 /* =========drop down message=========== */
 .msg-main{
-    display: none;
+    display: block;
     border: 1px solid var(--Grayish-blue);
     padding: .8rem;
     margin-left: 4.1rem;
     border-radius: 5px;
-}
-
-.msg-main > p{
     color: var(--Grayish-blue);
     font-size: 14px;
 }
+
+/* =========styling the active class upon clicking of the article element====== */
+
+.active > .msg-main{
+    display: none;
+}
+/* .in-active > .messages-cont{
+    background: var(--White);
+} */
