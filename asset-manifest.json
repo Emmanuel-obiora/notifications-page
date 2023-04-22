@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Emmanuel-obiora/notifications-page/static/css/main.da215fb5.css",
-    "main.js": "/Emmanuel-obiora/notifications-page/static/js/main.5043af1e.js",
-    "index.html": "/Emmanuel-obiora/notifications-page/index.html",
-    "main.da215fb5.css.map": "/Emmanuel-obiora/notifications-page/static/css/main.da215fb5.css.map",
-    "main.5043af1e.js.map": "/Emmanuel-obiora/notifications-page/static/js/main.5043af1e.js.map"
+    "main.css": "/emmanuel-obiora/notifications-page/static/css/main.da215fb5.css",
+    "main.js": "/emmanuel-obiora/notifications-page/static/js/main.5043af1e.js",
+    "index.html": "/emmanuel-obiora/notifications-page/index.html",
+    "main.da215fb5.css.map": "/emmanuel-obiora/notifications-page/static/css/main.da215fb5.css.map",
+    "main.5043af1e.js.map": "/emmanuel-obiora/notifications-page/static/js/main.5043af1e.js.map"
   },
   "entrypoints": [
     "static/css/main.da215fb5.css",
