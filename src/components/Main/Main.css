@@ -8,6 +8,18 @@
     padding: 1rem;
 }
 
+@media screen and(max-width: 37.5rem){
+    .main-container{
+        width: 300px;
+    }
+}
+
+@media screen and(max-width: 64rem){
+    .main-container{
+        width: 450px;
+    }
+}
+
 .main-container > section{
     display: flex;
     align-items: center;

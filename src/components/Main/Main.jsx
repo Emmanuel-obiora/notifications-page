@@ -9,15 +9,16 @@ const Main = () => {
 
   const getNotification = () => {
     setIsLoading(true);
-    fetch('http://localhost:3002/db').then((data) => {
+    fetch('https://obi-server.onrender.com/notify')
+    .then((data) => {
       // console.log(data);
       return data.json();
-        }).then((response) => {
+     }).then((response) => {
             // console.log(response);
-            setNotification(response.notify)
+            setNotification(response)
             setIsLoading(false)
         }).catch((err) =>{
-            // console.log(err);
+            console.log(err);
             setIsLoading(false);
         });
   }
