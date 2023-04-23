@@ -59,8 +59,7 @@ const Main = () => {
               <article className='messages-container_sub' key={info.id} onClick={()=> 
                 handleNotificationClick(info.id)} data-unread={info.isUnread}>
                 <div className='messages-container_sub_roll'>
-                  {/* <span className="user-icon">{info.icon}</span> */}
-                  {/* <img src={info.icon} className="user-icon" alt="" /> */}
+                  <img src={info.icon} className="user-icon" alt="" />
                   <div className="message-details">
                     <h2 className="message-details_head">{info.messenger} 
                       <span className="message-details_head_para">{info.highlight}</span>
