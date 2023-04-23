@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  background: hsl(210, 60%, 98%);
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.left-header > span {
+  background: hsl(219, 85%, 26%);
+  color: hsl(210, 60%, 98%);
+  width: 1.4rem;
+  height: 1.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: hsl(219, 14%, 63%);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.right-header:hover {
+  background: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+}
+
+.Container {
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 650px;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+}
+@media (max-width: 64rem) {
+  .Container {
+    width: 500px;
+  }
+}
+@media (max-width: 37.5rem) {
+  .Container {
+    width: 100%;
+  }
+}
+
+.messages-container {
+  margin-top: 0.5rem;
+  display: grid;
+  row-gap: 0.3rem;
+  background: transparent;
+}
+.messages-container_sub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-radius: 5px;
+}
+.messages-container_sub_roll {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.messages-container_sub_roll:hover {
+  background: hsl(2, 41%, 55%);
+}
+.messages-container_sub-but {
+  display: block;
+  padding: 0.8rem;
+  margin-left: 4.1rem;
+  border-radius: 5px;
+  color: hsl(219, 14%, 63%);
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.messages-container_sub-but:hover {
+  border: 1px solid hsl(219, 14%, 63%);
+  background: hsl(211, 68%, 94%);
+}
+
+.user-icon {
+  max-width: 8%;
+  border-radius: 50%;
+}
+
+.message-details {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.message-details_head {
+  display: flexbox;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
+.message-details_head_para {
+  color: hsl(219, 14%, 63%);
+  margin: 0 5px;
+}
+.message-details_head_notice {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  font-size: 16px;
+  margin-right: 6px;
+}
+.message-details_head #dynamic-class {
+  color: hsl(219, 85%, 26%);
+}
+.message-details_head .red-notice {
+  color: hsl(1, 90%, 64%);
+  width: 8px;
+  height: 8px;
+}
+.message-details > ._time {
+  font-size: 13px;
+}
+
+.trf-image {
+  max-width: 8%;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+[data-unread=true] {
+  background: hsl(210, 60%, 98%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+}
+.attribution > a {
+  color: hsl(228, 45%, 44%);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid hsl(211, 68%, 94%);
+  border-top: 10px solid hsl(2, 41%, 55%);
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: hsl(219, 12%, 42%);
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+.Container{
+    background: $White;
+    border-radius: 10px;
+    width: 650px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+    // margin-top: 40rem;
+
+    @media (max-width: 64rem){
+        width: 500px;
+        // margin-top: 10rem;
+    }
+
+    @media (max-width: 37.5rem){
+        width: 100%;
+    }
+}

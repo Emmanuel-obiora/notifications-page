@@ -9,8 +9,8 @@
   .loading-spinner {
     width: 50px;
     height: 50px;
-    border: 10px solid var(--Light-grayish-blue-1);
-    border-top: 10px solid var(--Blue-varient);
+    border: 10px solid $Light-grayish-blue-1;
+    border-top: 10px solid $Red-varient;
     border-radius: 50%;
     animation: spinner 1.5s linear infinite;
   }
@@ -19,7 +19,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    background: var(--Dark-grayish-blue);
+    background: $Dark-grayish-blue;
     z-index: 50;
     position: fixed;
     left: 0;

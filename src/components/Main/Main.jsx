@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import './Main.css'
-import {BsFillCircleFill} from 'react-icons/bs'
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner'
+import React, {useState, useEffect} from 'react';
+import {BsFillCircleFill} from 'react-icons/bs';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import '../../styles.css';
 
 const Main = () => {
   const [notification, setNotification] = useState([]);
@@ -43,37 +43,38 @@ const Main = () => {
 
 
   return (
-    <main className='main-container'>
+    <main className='Container'>
       <section>
         <div className="left-header">
           <h1>Notifications</h1>
           <span>{notification.filter(n => n.isUnread).length}</span>
         </div>
-        <button type='button' id='mark' onClick={markAllUnread} className='mark-read'>Mark all as read</button>
+        <button type='button' id='mark' onClick={markAllUnread} className='right-header'>Mark all as read</button>
       </section>
 
-      <div className="messages">
+      <div className="messages-container">
         {
           notification.map((info) => {
             return(
-              <article className='messages-art' key={info.id} onClick={()=> 
+              <article className='messages-container_sub' key={info.id} onClick={()=> 
                 handleNotificationClick(info.id)} data-unread={info.isUnread}>
-                <div className='messages-cont'>
-                  <img src={info.icon} className="user-icon" alt="" />
-                  <div className="messages-cont_info">
-                    <h2 className="msg">{info.messenger} 
-                      <span className="paragraph">{info.highlight}</span>
-                      <span className='notice' id={info.classD}>{info.update}</span>
+                <div className='messages-container_sub_roll'>
+                  {/* <span className="user-icon">{info.icon}</span> */}
+                  {/* <img src={info.icon} className="user-icon" alt="" /> */}
+                  <div className="message-details">
+                    <h2 className="message-details_head">{info.messenger} 
+                      <span className="message-details_head_para">{info.highlight}</span>
+                      <span className='message-details_head_notice' id={info.classD}>{info.update}</span>
                       {info.isUnread &&(
                         <BsFillCircleFill className='red-notice'/>
                       )}
                     </h2>
-                    <span>{info.time}</span>
+                    <span className="messages-details_time">{info.time}</span>
                   </div>
                   <img src={info.trfImage} className='trf-image' alt="" />
                 </div>
                 {info.msgUnread && (
-                  <p className='msg-main'>{info.Msg}</p>
+                  <p className='messages-container_sub-but'>{info.Msg}</p>
                 )}
               </article>
             )

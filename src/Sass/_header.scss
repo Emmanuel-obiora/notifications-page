@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    & > span{
+        background: $Blue;
+        color: $Very-light-grayish-blue;
+        width: 1.4rem;
+        height: 1.2rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: $Grayish-blue;
+    font-weight: 500;
+    cursor: pointer;
+    padding: .2rem;
+    border-radius: 5px;
+
+    &:hover{
+        background: $Blue;
+        color: $White;
+    }
+}
+
