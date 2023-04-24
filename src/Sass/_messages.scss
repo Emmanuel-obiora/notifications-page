@@ -42,8 +42,11 @@
 }
 
 .user-icon{
+    display: grid;
     max-width: 8%;
     border-radius: 50%;
+    // width: 4px;
+    // height: 4px;
 }
 
 .message-details{

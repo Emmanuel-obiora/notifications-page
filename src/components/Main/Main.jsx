@@ -9,7 +9,14 @@ const Main = () => {
 
   const getNotification = () => {
     setIsLoading(true);
-    fetch('https://obi-server.onrender.com/notify')
+    fetch('https://obi-server.onrender.com/notify', {
+      headers: {
+        'Access-Control-Allow-Credentials' : true,
+        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Methods':'GET',
+        'Content-type': 'text/html',
+    }
+    })
     .then((data) => {
       // console.log(data);
       return data.json();
