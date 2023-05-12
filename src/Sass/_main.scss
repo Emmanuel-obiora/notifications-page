@@ -1,15 +1,15 @@
 .Container{
     background: $White;
     border-radius: 10px;
-    width: 650px;
+    max-width: 650px;
     height: auto;
     align-self: center;
     justify-self: center;
     padding: 1rem;
-    // margin-top: 40rem;
+    margin-top: 1rem;
 
     @media (max-width: 64rem){
-        width: 500px;
+        max-width: 500px;
         // margin-top: 10rem;
     }
 
